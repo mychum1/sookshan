@@ -3,7 +3,7 @@ exports.connection = mysql.createConnection({
 
 host : 'localhost',
 user : 'root',
-password : 'Dbfhdwlfhd11@',
+password : '!@#$%',
 port : '3306',
 database : 'sookshan'
 
