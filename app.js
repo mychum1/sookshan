@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const boardRouter = require('./routes/board');
 
 var app = express();
 
@@ -18,6 +19,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/test', function(req, res) { res.send('hello world'); });
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
