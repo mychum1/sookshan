@@ -6,7 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-
 //글 생성
 router.post('/board/:id', function(req, res, next) {
   let id = req.params.id;
